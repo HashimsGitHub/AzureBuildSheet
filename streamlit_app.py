@@ -590,9 +590,7 @@ def main():
         with col1:
             resource_group_name = st.text_input("Resource Group Name", value="rg-myproject-dev")
             location = st.selectbox("Location", [
-                "eastus", "eastus2", "westus", "westus2", 
-                "centralus", "northcentralus", "southcentralus",
-                "westeurope", "northeurope", "uksouth", "ukwest"
+                "australiaeast","australiasoutheast"
             ])
             vnet_name = st.text_input("Virtual Network Name", value="vnet-core")
             vnet_address_space = st.text_input("VNet Address Space", value="10.0.0.0/16")
